@@ -4,7 +4,7 @@ import { ChartSpline, Clock, Home } from 'lucide-react';
 import Image from 'next/image';
 
 import { usePathname } from 'next/navigation';
-import logo from "../../assets/logo.png";
+
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -53,7 +53,7 @@ const links = (
       {/* LEFT - LOGO */}
       <div className="flex-1 flex items-center gap-2">
         <Image
-          src={logo}
+          src="/logo.png"
           alt="Logo"
           width={40}
           height={40}

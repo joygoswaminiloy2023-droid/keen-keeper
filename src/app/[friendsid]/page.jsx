@@ -2,6 +2,7 @@
 import { Archive, Bell, MessageCircle, Phone, Trash, Video } from "lucide-react";
 import Profile_card from "../components/Profile_card";
 import Profilecountcards from "../components/Profilecountcards";
+import Profilebtn from "../components/profile/Profilebtn";
 
 
 
@@ -64,24 +65,7 @@ const Profile = async({params}) => {
   <h2 className="font-semibold text-lg">Quick Check-In</h2>
 
 
-  <div className="flex gap-3">
-
-    <div className="flex-1 bg-gray-100 hover:bg-gray-200 transition rounded-lg py-6 flex flex-col items-center justify-center gap-2 cursor-pointer">
-  <Phone className="w-5 h-5" />
-  <span className="text-sm font-medium">Call</span>
-</div>
-
-<div className="flex-1 bg-gray-100 hover:bg-gray-200 transition rounded-lg py-6 flex flex-col items-center justify-center gap-2 cursor-pointer">
-  <MessageCircle className="w-5 h-5" />
-  <span className="text-sm font-medium">Text</span>
-</div>
-
-<div className="flex-1 bg-gray-100 hover:bg-gray-200 transition rounded-lg py-6 flex flex-col items-center justify-center gap-2 cursor-pointer">
-  <Video className="w-5 h-5" />
-  <span className="text-sm font-medium">Video</span>
-</div>
-
-  </div>
+ <Profilebtn friend={friend}></Profilebtn>
 
 </div>
 

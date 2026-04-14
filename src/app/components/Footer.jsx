@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
-import footlogo from "../../assets/logo-xl.png"
+
 
 const Footer = () => {
     return (
@@ -11,7 +11,7 @@ const Footer = () => {
 
         {/* TITLE */}
     <Image 
-    src={footlogo}
+    src="/logo-xl.png"
     width={300}
     height={61}
     alt=''
@@ -19,7 +19,7 @@ const Footer = () => {
 
         {/* DESCRIPTION */}
         <p className="text-sm text-gray-300 my-2 ">
-Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.        </p>
+Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
         <p>Social Links</p>
         {/* SOCIAL ICONS */}
         <div className="flex gap-4 mt-4">

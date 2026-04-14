@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Profilecountcards = ({friend}) => {
     return (
      <div className="grid  md:grid-cols-3 gap-10 ">
@@ -26,6 +27,7 @@ const Profilecountcards = ({friend}) => {
       <p className="opacity-60">Next Due</p>
     </div>
   </div>
+
 
 
 
