@@ -9,7 +9,6 @@ import React, { useContext } from 'react';
 const Profilebtn = ({friend}) => {
     const {addTimeline}= useContext(InstallTimelineContext);
 
-
     return (
        <div className="flex gap-3">
 
