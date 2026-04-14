@@ -1,24 +1,28 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const F_card = ({f}) => {
     console.log(f)
     return (
-  <div className="bg-white rounded-xl shadow-md p-5 hover:shadow-xl transition-all border border-gray-100">
+  <Link href={`../${f.id}`} className="bg-white rounded-xl shadow-md p-5 hover:shadow-xl transition-all border border-gray-100">
 
-      {/* avatar */}
-      <div className="flex flex-col items-center text-center space-y-2">
-        {/* <Image
-          src={f.picture}
-          alt={f.name}
-          width={70}
-          height={70}
-          className="rounded-full object-cover"
-        /> */}
+      
+     <div className="flex flex-col items-center text-center space-y-2">
+  <div className="relative w-20 h-20 rounded-full overflow-hidden">
+    <Image
+      src={f.picture}
+      alt={f.name}
+      fill
+      className="object-cover"
+    />
+  </div>
 
-        {/* name */}
+
+     
         <h2 className="font-semibold text-lg">{f.name}</h2>
 
-        {/* last contact */}
+      
         <p className="text-xs text-gray-400">
           {f.days_since_contact} days ago
         </p>
@@ -35,7 +39,7 @@ const F_card = ({f}) => {
           ))}
         </div>
 
-        {/* status */}
+    
         <span
           className={`text-xs px-3 py-1 rounded-full mt-2 font-medium ${
             f.status === "overdue"
@@ -45,10 +49,10 @@ const F_card = ({f}) => {
               : "bg-yellow-100 text-yellow-600"
           }`}
         >
-          {f.status}
+   
         </span>
       </div>
-    </div>
+    </Link>
     );
 };
 
