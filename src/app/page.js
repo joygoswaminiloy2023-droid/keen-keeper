@@ -21,7 +21,7 @@ relationships that matter most.</p>
 <button className="btn btn-xs sm:btn-sm md:btn-sm lg:btn-md  bg-green-800 hover:bg-green-950"><Plus></Plus>Add Friends</button>
 </div>
 {/* card_1 */}
-<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
   <div className="card  bg-base-50 w-60 mx-auto shadow-md">
     <div className="card-body text-center">
       <h2 className="card-title justify-center text-3xl">{friends.length}</h2>
@@ -58,9 +58,9 @@ relationships that matter most.</p>
 
 </div>
 
-<div className="my-20">
+<div className="my-20 text-center md:text-left">
   <h1 className="font-bold text-xl mb-2">Your Friends</h1>
-<div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+<div className="grid grid-cols-1 mx-10 md:mx-0 md:grid-cols-2 lg:grid-cols-4  gap-5">
 
 {
   friends.map((f,ind)=><F_card key={ind} f={f}></F_card>)
