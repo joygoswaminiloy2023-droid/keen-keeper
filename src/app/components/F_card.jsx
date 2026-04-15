@@ -32,7 +32,7 @@ const F_card = ({f}) => {
           {f.tags?.map((tag, i) => (
             <span
               key={i}
-              className="text-xs px-2 py-1 bg-gray-100 rounded-full text-gray-600"
+              className="text-xs px-2 py-1 bg-green-100 rounded-full text-green-600"
             >
               {tag}
             </span>
@@ -48,8 +48,9 @@ const F_card = ({f}) => {
               ? "bg-green-100 text-green-600"
               : "bg-yellow-100 text-yellow-600"
           }`}
+          
         >
-   
+   {f.status}
         </span>
       </div>
     </Link>
