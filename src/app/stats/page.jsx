@@ -1,6 +1,13 @@
 "use client";
 
-import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 import { useTimeline } from "../context/InstallTimelineProvider";
 
 const Page = () => {
@@ -26,47 +33,52 @@ const Page = () => {
     { name: "Video", value: counts.video },
   ];
 
-
-  const COLORS = ["#7C3AED", "#1F4D3F", "#2F855A"]; 
-  
+  const COLORS = ["#7C3AED", "#1F4D3F", "#2F855A"];
 
   return (
-    <div className="max-w-7xl m-auto space-y-5">
-        <h1 className="text-5xl font-bold ">Friendship Analytics</h1>
-    <div className=" max-w-7xl m-auto flex flex-col  justify-center  shadow-lg bg-[#F8FAFC] rounded-xl p-6 items-start">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
       
-      <h2 className="text-xl font-semibold mb-4 text-gray-700">
+      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center md:text-left">
+        Friendship Analytics
+      </h1>
+
+      
+    
+
+   
+      <div className="w-full h-[280px] sm:h-[350px] md:h-[450px] my-5 shadow-xl rounded-3xl ">
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-700 mt-10 mb-6 mx-5 text-center md:text-left">
         By Interaction Type
       </h2>
-    <div className="flex flex-col items-center justify-center  w-7xl bg-[#F8FAFC] rounded-xl p-6">
-      <PieChart width={400} height={300}>
-        <Pie
-          data={data}
-          dataKey="value"
-          innerRadius={80}       
-          outerRadius={110}
-          paddingAngle={5}        
-          cornerRadius={10}      
-          stroke="none"
-        >
-          {data.map((entry, index) => (
-            <Cell key={entry.name} fill={COLORS[index]} />
-          ))}
-        </Pie>
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie
+              data={data}
+              dataKey="value"
+              innerRadius="40%"
+              outerRadius="50%"
+              paddingAngle={5}
+              cornerRadius={10}
+              stroke="none"
+            >
+              {data.map((entry, index) => (
+                <Cell key={entry.name} fill={COLORS[index]} />
+              ))}
+            </Pie>
 
-        <Tooltip />
+            <Tooltip />
 
-     
-        <Legend
-          verticalAlign="bottom"
-          iconType="circle"
-          formatter={(value) => (
-            <span className="text-gray-600">{value}</span>
-          )}
-        />
-      </PieChart>
+            <Legend
+              verticalAlign="bottom"
+              iconType="circle"
+              formatter={(value) => (
+                <span className="text-gray-600 text-sm">{value}</span>
+              )}
+            />
+          </PieChart>
+        </ResponsiveContainer>
       </div>
-    </div>
     </div>
   );
 };

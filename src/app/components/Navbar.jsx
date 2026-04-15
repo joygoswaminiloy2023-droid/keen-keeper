@@ -14,7 +14,7 @@ const links = (
     <li>
       <Link
         href="/"
-        className={`flex items-center gap-2 px-3 py-2 rounded ${
+        className={`flex items-center gap-2 px-3 py-2 rounded hover:bg-[#244D3F] hover:text-white ${
           path === "/" ? "bg-[#244D3F] text-white" : ""
         }`}
       >
@@ -25,7 +25,7 @@ const links = (
     <li>
       <Link
         href="/timeline"
-        className={`flex items-center gap-2 px-3 py-2 rounded ${
+        className={`flex items-center gap-2 px-3 py-2 rounded hover:bg-[#244D3F] hover:text-white ${
           path === "/timeline" ? "bg-[#244D3F] text-white" : ""
         }`}
       >
@@ -36,7 +36,7 @@ const links = (
     <li>
       <Link
         href="/stats"
-        className={`flex items-center gap-2 px-3 py-2 rounded ${
+        className={`flex items-center gap-2 px-3 py-2 rounded hover:bg-[#244D3F] hover:text-white ${
           path === "/stats" ? "bg-[#244D3F] text-white" : ""
         }`}
       >
@@ -62,7 +62,7 @@ const links = (
       </div>
 
       {/* MOBILE MENU */}
-      <div className="flex-none lg:hidden">
+      <div className="flex-none lg:hidden ">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost">
             <svg
@@ -83,7 +83,7 @@ const links = (
 
           <ul
             tabIndex={0}
-            className="menu dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
           >
         {links}
           </ul>

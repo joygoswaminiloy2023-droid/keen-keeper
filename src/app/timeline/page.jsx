@@ -2,26 +2,52 @@
 
 import { useTimeline } from "@/app/context/InstallTimelineProvider";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { FaAngleDown } from "react-icons/fa6";
 
 const Page = () => {
   const { timeline } = useTimeline();
 
+const [sortingtype,setSortingtype]=useState("")
+  
+// filtering 
+
+const Filtertimeline=sortingtype?timeline.filter(f=>f.type.toLowerCase()===sortingtype):timeline;
+
   return (
-    <div className="max-w-5xl mx-auto p-5 w-full">
-        <div className="dropdown">
-  <div tabIndex={0} role="button" className="btn m-1">Click</div>
-  <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-    <li><a>Item 1</a></li>
-    <li><a>Item 2</a></li>
+    <div className="max-w-7xl mx-auto w-full shadow-xl p-10 my-auto rounded-3xl ">
+  
+      <h1 className="text-5xl font-bold text-center my-4 md:text-left ">Timeline</h1>
+<div className="dropdown flex justify-center md:justify-start w-full mb-10">
+  <div
+    tabIndex={0}
+    role="button"
+    className="btn m-1 flex items-center gap-2 bg-white text-black"
+  >
+    Filter Timeline <FaAngleDown />
+  </div>
+
+  <ul
+    tabIndex={0}
+    className="dropdown-content menu bg-white  text-black rounded-box  w-52 p-2 shadow"
+  >
+    <li onClick={()=>setSortingtype("call")}>
+      <a  className="hover:bg-gray-100">Call</a>
+    </li>
+    <li onClick={()=>setSortingtype("text")}>
+      <a className="hover:bg-gray-100">Text</a>
+    </li>
+    <li onClick={()=>setSortingtype("video")}>
+      <a className="hover:bg-gray-100">Video</a>
+    </li>
   </ul>
 </div>
-      <h1 className="text-xl font-bold my-4">Timeline</h1>
 
       {timeline.length === 0 ? (
-        <p className="text-center">No activity yet</p>
+        <p className="text-center font-bold text-4xl my-5">No activity yet</p>
       ) : (
-        timeline.map((item) => (
-          <div key={item.id} className="p-3 bg-white shadow rounded mb-2 flex items-center gap-3">
+        Filtertimeline.map((item) => (
+          <div key={item.id} className="p-3 bg-gray-100 shadow-lg rounded mb-2 flex items-center gap-3">
 
             {/* ICON */}
 <Image
