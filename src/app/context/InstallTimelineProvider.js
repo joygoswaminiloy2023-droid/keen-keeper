@@ -9,7 +9,7 @@ export const InstallTimelineContext = createContext();
 const InstallTimelineProvider = ({ children }) => {
   const [timeline, setTimeline] = useState([]);
 
- const addTimeline = (type, name = "Someone") => {
+ const addTimeline = (type, name = "") => {
   const newItem = {
     id: Date.now(),
     type,
