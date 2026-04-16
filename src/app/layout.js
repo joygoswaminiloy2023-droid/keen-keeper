@@ -11,14 +11,14 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
-
 export const metadata = {
   title: "KeenKeeper",
   description: "Friendship tracking app",
   icons: {
-    icon: "/public/favicon.ico",
+    icon: "/icon.png",
   },
 };
+
 
 export default function RootLayout({ children }) {
   return (
