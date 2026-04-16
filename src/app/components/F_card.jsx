@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const F_card = ({f}) => {
-    console.log(f)
+
     return (
   <Link href={`../${f.id}`} className="bg-white rounded-xl shadow-md p-5 hover:shadow-xl transition-all border border-gray-100">
 

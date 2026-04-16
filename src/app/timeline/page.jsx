@@ -43,7 +43,7 @@ useEffect(() => {
   setFilteredtimeline(data);
 }, [filtertype,timeline, search]);
 
-console.log(timeline.map(t => t.time));
+
 
   return (
     <div className="max-w-7xl mx-auto w-full shadow-xl p-10 my-auto rounded-3xl ">
@@ -92,7 +92,7 @@ console.log(timeline.map(t => t.time));
   value={search}
   onChange={(e) => {
     setSearch(e.target.value);
-    console.log(e.target.value);
+    
   }}
 />
       </div>
