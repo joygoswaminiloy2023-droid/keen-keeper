@@ -1,48 +1,15 @@
-# 👥 KeenKeeper — Keep Your Friendships Alive
+# 👥 KeenKeeper
 
-KeenKeeper is a modern friendship tracking web application built with Next.js and React. It helps users maintain strong relationships by tracking interactions like calls, texts, and video chats, while providing analytics and a visual timeline of all activities.
+KeenKeeper is a modern friendship tracking web application that helps users stay connected with friends by logging interactions like calls, texts, and video chats. It also provides a timeline and basic analytics to visualize friendship activity.
 
----
+## 🧠 Short Description
+A web app that helps users manage friendships by tracking interactions and showing activity history in a clean and interactive UI.
 
-## 🚀 Live Demo
-https://your-live-link.vercel.app
 
----
-
-## 📸 Preview
-Add screenshots of your Home page, Friend Details page, Timeline, and Stats page here.
-
----
-
-## 🧠 About the Project
-
-KeenKeeper is designed to solve the common problem of losing touch with friends over time. It allows users to track interactions and visualize friendship activity in a structured and interactive way.
-
-Users can:
-- View all friends in a clean card layout
-- Track last interaction time
-- Log new interactions (Call, Text, Video)
-- View full interaction timeline
-- Analyze friendship activity through charts
-
----
-
-## ✨ Features
-
-- 👥 Friend management system using JSON data
-- 📅 Days since last contact tracking
-- 🔴 Status-based UI (overdue, on-track, almost due)
-- 🧭 Dynamic friend detail pages
-- ⚡ Quick check-in (Call / Text / Video)
-- 📜 Full timeline history system
-- 🔍 Search timeline by name
-- 🎯 Filter timeline by interaction type
-- ⬆️ Sort timeline (Latest / Oldest)
-- 📊 Friendship analytics dashboard (Pie chart)
-- 🔔 Toast notifications for interactions
-- 📱 Fully responsive design (mobile, tablet, desktop)
-- ⚡ Loading states for better UX
-- ❌ Custom 404 page handling
+## ✨ Key Features
+- Track friend interactions (Call, Text, Video) with automatic timeline updates
+- Filter, search, and sort timeline activities
+- Friend analytics dashboard with pie chart visualization
 
 ---
 
@@ -60,6 +27,7 @@ Users can:
 
 ## 🚀 Live Demo
 
+[Live](https://keen-keeper-indol.vercel.app/)
 
 ## 📸 Preview
 ### Home Page

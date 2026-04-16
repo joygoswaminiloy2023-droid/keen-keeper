@@ -8,7 +8,9 @@ import Profilebtn from "../components/profile/Profilebtn";
 
 const Profile = async({params}) => {
      const {friendsid}=await params;
-    const res=await fetch("http://localhost:3000/friends.json")
+    const res=await fetch("https://keen-keeper-indol.vercel.app/friends.json",{
+      cache:"no-store"
+    })
     const data= await res.json();
 
     const friend=data.find(f=>f.id==friendsid)
