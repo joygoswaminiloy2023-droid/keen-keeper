@@ -16,7 +16,7 @@ export const metadata = {
   title: "KeenKeeper",
   description: "Friendship tracking app",
   icons: {
-    icon: "https://keen-keeper-indol.vercel.app/favicon.png",
+    icon: "/public/favicon.ico",
   },
 };
 
