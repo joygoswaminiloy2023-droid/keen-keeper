@@ -15,9 +15,6 @@ const geist = Geist({
 export const metadata = {
   title: "KeenKeeper",
   description: "Friendship tracking app",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({ children }) {
