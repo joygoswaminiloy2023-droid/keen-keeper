@@ -16,7 +16,7 @@ export const metadata = {
   title: "KeenKeeper",
   description: "Friendship tracking app",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 
