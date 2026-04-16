@@ -31,13 +31,13 @@ A web app that helps users manage friendships by tracking interactions and showi
 
 ## 📸 Preview
 ### Home Page
-![Home Page](./screenshots/Home_keen.png)
+![Home Page](/public/screenshots/Home_keen.png)
 
 ### Friend Details Page
-![Friend Details](./screenshots/Profile.png)
+![Friend Details](/public/screenshots/profile.png)
 
 ### Timeline Page
-![Timeline](./screenshots/timeline.png)
+![Timeline](/public/screenshots/timeline.png)
 
 ### Stats Page
-![Stats](./screenshots/stat.png)
+![Stats](/public/screenshots/stat.png)
