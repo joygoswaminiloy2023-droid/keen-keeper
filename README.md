@@ -27,7 +27,7 @@ A web app that helps users manage friendships by tracking interactions and showi
 
 ## 🚀 Live Demo
 
-[Live](https://keen-keeper-indol.vercel.app/)
+[](https://keen-keeper-indol.vercel.app/)
 
 ## 📸 Preview
 ### Home Page

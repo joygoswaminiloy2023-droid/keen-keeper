@@ -24,20 +24,20 @@ const Profile = async({params}) => {
     <Profile_card friend={friend} />
 
     {/* Snooze Section */}
-<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center">
+<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center cursor-pointer hover:bg-green-900 hover:text-white hover:scale-90 transition-all duration-300" >
   <h2 className="font-semibold text-lg flex items-center justify-center gap-2">
     <Bell /> Snooze
   </h2>
 </div>
 
-<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center">
+<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center cursor-pointer  hover:bg-green-900 hover:text-white hover:scale-90 transition-all duration-300">
   <h2 className="font-semibold text-lg flex items-center justify-center gap-2">
     <Archive /> Archive
   </h2>
 </div>
 
-<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center">
-  <h2 className="font-semibold text-lg flex items-center justify-center gap-2 text-red-600">
+<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center cursor-pointer text-red-600 hover:bg-red-600 hover:text-white hover:scale-90 transition-all duration-300">
+  <h2 className="font-semibold text-lg flex items-center justify-center gap-2 ">
     <Trash /> Delete
   </h2>
 </div>
